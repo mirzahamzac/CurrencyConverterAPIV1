@@ -14,9 +14,9 @@ namespace CurrencyConverterAPI.Controllers
     {
         private readonly ExchangeRateService _exchangeRateService;
 
-        public CurrencyConverterController()
+        public CurrencyConverterController(ExchangeRateService exchangeRateService)
         {
-            _exchangeRateService = new ExchangeRateService();
+            _exchangeRateService =  exchangeRateService;
         }
 
         [HttpGet("latest")]
