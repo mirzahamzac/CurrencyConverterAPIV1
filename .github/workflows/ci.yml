@@ -18,7 +18,7 @@ jobs:
     - name: Set up .NET Core
       uses: actions/setup-dotnet@v2
       with:
-        dotnet-version: '5.0.x' # Use the .NET version you are targeting
+        dotnet-version: '7.0.x' # Use the .NET version you are targeting
 
     - name: Restore dependencies
       run: dotnet restore
